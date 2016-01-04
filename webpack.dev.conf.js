@@ -41,7 +41,6 @@ module.exports = {
         ]
     },
     devServer: {
-        host: '10.1.194.32',
         contentBase: 'example/'
     }
 };
