@@ -1,0 +1,57 @@
+.textbox {
+    width: 300px;
+    height: 44px;
+    padding: 0 13px;
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
+    line-height: 44px;
+    color: #333;
+}
+
+.textbox:focus {
+    border-color: #00b38a;
+}
+
+.textbox:-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.textbox::-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.textbox:-ms-input-placeholder {
+    color: #b5b5b5;
+}
+
+.textbox::-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+.primary {
+    border-color: #f0f0f0;
+    background: #f0f0f0;
+}
+
+.disabled {
+    border-color: #e0e0e0;
+    background-color: #e0e0e0;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.textbox.disabled:-moz-placeholder {
+    color: #fff;
+}
+
+.textbox.disabled::-moz-placeholder {
+    color: #fff;
+}
+
+.textbox.disabled:-ms-input-placeholder {
+    color: #fff;
+}
+
+.textbox.disabled::-webkit-input-placeholder {
+    color: #fff;
+}

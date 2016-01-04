@@ -1,0 +1,67 @@
+.radio {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+.input {
+    position: absolute;
+    top: -50px;
+}
+
+.outer {
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 2px solid #b5b5b5;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    margin-left: -3px;
+    border-radius: 8px;
+    background-color: #00b38a;
+}
+
+.radio:hover .outer {
+    border-color: #00b38a;
+}
+
+.checked .outer {
+    border-color: #00b38a;
+}
+
+.checked .inner {
+    display: inline-block;
+}
+
+.disabled {
+    color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.disabled .outer {
+    border-color: #e0e0e0;
+}
+
+.disabled .inner {
+    background-color: #e0e0e0;
+}
+
+.disabled:hover .outer {
+    border-color: #e0e0e0;
+}

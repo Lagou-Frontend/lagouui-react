@@ -1,0 +1,58 @@
+.textarea {
+    width: 300px;
+    padding: 13px;
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
+    line-height: 1.2;
+    color: #333;
+    resize: none;
+    overflow-x: hidden;
+}
+
+.primary {
+    border-color: #f0f0f0;
+    background-color: #f0f0f0;
+}
+
+.textarea:focus {
+    border-color: #00b38a;
+}
+
+.textarea:-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.textarea::-moz-placeholder {
+    color: #b5b5b5;
+}
+
+.textarea:-ms-input-placeholder {
+    color: #b5b5b5;
+}
+
+.textarea::-webkit-input-placeholder {
+    color: #b5b5b5;
+}
+
+.disabled {
+    border-color: #e0e0e0;
+    background-color: #e0e0e0;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.textarea.disabled:-moz-placeholder {
+    color: #fff;
+}
+
+.textarea.disabled::-moz-placeholder {
+    color: #fff;
+}
+
+.textarea.disabled:-ms-input-placeholder {
+    color: #fff;
+}
+
+.textarea.disabled::-webkit-input-placeholder {
+    color: #fff;
+}
