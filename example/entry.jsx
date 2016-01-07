@@ -2,7 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Button, Textbox, Textarea, Checkbox, RadioGroup, Radio, Select } from '../src/LGUIReact';
+import { Button, Textbox, Textarea, Checkbox, RadioGroup, Radio, Select, Avatar } from '../src/LGUIReact';
 
 let handleClick= function() {
     alert('clicked');
@@ -73,6 +73,10 @@ ReactDOM.render(
         <div className="row">
             <Select options={options} onChange={handleChange} multiple></Select>
             <Select defaultValue={["11111"]} options={options} onChange={handleChange} multiple disabled></Select>
+        </div>
+        <div className="row">
+            <Avatar text="H" color="#ff8590"></Avatar>
+            <Avatar src="http://www.lagou.com/images/jd_portrait.png"></Avatar>
         </div>
     </div>,
     document.getElementById('example')

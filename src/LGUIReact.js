@@ -18,6 +18,8 @@ import Radio from './Radio/Radio';
 
 import Select from './Select/Select';
 
+import Avatar from './Avatar/Avatar';
+
 import Icon from 'react-fa';
 
 export {
@@ -28,5 +30,6 @@ export {
     RadioGroup,
     Radio,
     Select,
+    Avatar,
     Icon
 };
