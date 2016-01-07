@@ -8,12 +8,12 @@ export default class Textbox extends React.Component {
     static defaultProps = {
         type: 'text',
         lgStyle: 'default'
-    }
+    };
 
     static propTypes = {
         type: React.PropTypes.oneOf(['text', 'password']),
         lgStyle: React.PropTypes.oneOf(['default', 'primary'])
-    }
+    };
 
     render() {
         let { className, lgStyle, disabled, ...other } = this.props;

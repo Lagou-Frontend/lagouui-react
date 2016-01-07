@@ -7,11 +7,11 @@ import cx from 'classnames';
 export default class Checkbox extends React.Component {
     static propTypes = {
         label: React.PropTypes.string
-    }
+    };
 
     state = {
         checked: !!this.props.defautlChecked
-    }
+    };
 
     handlCheck(...args) {
         if (args[0].target.tagName !== 'INPUT') {

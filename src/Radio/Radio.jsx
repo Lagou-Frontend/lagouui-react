@@ -6,11 +6,11 @@ import cx from 'classnames';
 export default class Radio extends React.Component {
     static defaultProps = {
         checked: false
-    }
+    };
 
     static propTyps = {
         checked: React.PropTypes.bool
-    }
+    };
 
     render() {
         let { className, label, ...other } = this.props;

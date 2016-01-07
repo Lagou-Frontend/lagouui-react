@@ -6,16 +6,16 @@ let defaultStyle = { color: '#b5b5b5' };
 export default class PlaceholderShim extends React.Component {
     static defaultProps = {
         elementType: 'input'
-    }
+    };
 
     static propTypes = {
         elementType: React.PropTypes.oneOf(['input', 'textarea']),
         placeholderStyle: React.PropTypes.object
-    }
+    };
 
     state = {
         placeholdering: !this.props.defaultValue
-    }
+    };
 
     needShim() {
         return this.props.placeholder && !hasPlaceHolderAttr;

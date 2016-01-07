@@ -7,12 +7,12 @@ export default class Button extends React.Component {
     static defaultProps = {
         lgSize: 'nl',
         lgStyle: 'default'
-    }
+    };
 
     static propTypes = {
         lgSize: React.PropTypes.oneOf(['lg', 'nl', 'sm']),
         lgStyle: React.PropTypes.oneOf(['default', 'primary', 'link'])
-    }
+    };
 
     render() {
         let { className, lgSize, lgStyle, disabled, block, ...other } = this.props;

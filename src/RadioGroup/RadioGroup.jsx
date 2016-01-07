@@ -4,11 +4,11 @@ import Radio from '../Radio/Radio';
 export default class RadioGroup extends React.Component {
     static propTyps = {
         name: React.PropTypes.string.isRequired
-    }
+    };
 
     state = {
         value: this.props.defaultValue
-    }
+    };
 
     handleChange(e) {
         this.setState({

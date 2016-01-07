@@ -9,18 +9,18 @@ import calculateNodeHeight from './calculateNodeHeight';
 export default class Textarea extends React.Component {
     static defaultProps = {
         lgStyle: 'default'
-    }
+    };
 
     static propTypes = {
         minRows: React.PropTypes.number,
         maxRows: React.PropTypes.number,
         lgStyle: React.PropTypes.oneOf(['default', 'primary'])
-    }
+    };
 
     state = {
         height: null,
         maxHeight: null
-    }
+    };
 
     autoSize(e) {
         let minRows = this.props.minRows || this.props.rows || 2;

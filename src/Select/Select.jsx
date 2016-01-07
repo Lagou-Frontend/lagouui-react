@@ -9,12 +9,12 @@ export default class Select extends React.Component {
     static defaultProps = {
         options: [],
         placeholder: 'Select...'
-    }
+    };
 
     static propTypes = {
         options: React.PropTypes.array.isRequired,
         placeholder: React.PropTypes.string
-    }
+    };
 
     state = {
         value: Array.isArray(this.props.defaultValue) ?
@@ -22,7 +22,7 @@ export default class Select extends React.Component {
             typeof this.props.defaultValue === 'undefined' ?
             [] : [this.props.defaultValue],
         showOptions: false
-    }
+    };
 
     handleSelect(e) {
         e.preventDefault();
