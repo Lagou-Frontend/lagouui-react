@@ -11,9 +11,14 @@ $ npm run dev
 $ open http://localhost:8080/
 ```
 
+## Build
+
+```
+$ npm run build
+```
+
 ## Todo
 
-* 增加build命令
 * 增加组件文档
 * 整理CSS样式
 * 增加验证组件
