@@ -1,5 +1,5 @@
 # LagouUI-React
-LagoUI-React是拉勾网基于React/ES6+/Webpack开发的组件库，目前包括`Button`，`Textbox`，`Textarea`，`Checkbox`，`Radio`，`Select`，`Icon`等组件，兼容Chrome/Firefox/IE8+等浏览器。
+LagoUI-React是拉勾网基于React/ES6+/Webpack开发的组件库，目前包括`Button`，`Textbox`，`Textarea`，`Checkbox`，`Radio`，`Select`，`Avatar`，`Icon`等组件，兼容Chrome/Firefox/IE8+等浏览器。
 
 ## Example
 
