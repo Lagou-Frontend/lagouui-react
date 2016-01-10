@@ -50,7 +50,7 @@ module.exports =
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.Icon = exports.Avatar = exports.Select = exports.Radio = exports.RadioGroup = exports.Checkbox = exports.Textarea = exports.Textbox = exports.Button = undefined;
+	exports.Avatar = exports.Select = exports.Radio = exports.RadioGroup = exports.Checkbox = exports.Textarea = exports.Textbox = exports.Button = exports.Icon = undefined;
 
 	__webpack_require__(1);
 
@@ -58,19 +58,23 @@ module.exports =
 
 	__webpack_require__(6);
 
-	var _Button = __webpack_require__(7);
+	var _Icon = __webpack_require__(7);
+
+	var _Icon2 = _interopRequireDefault(_Icon);
+
+	var _Button = __webpack_require__(11);
 
 	var _Button2 = _interopRequireDefault(_Button);
 
-	var _Textbox = __webpack_require__(12);
+	var _Textbox = __webpack_require__(14);
 
 	var _Textbox2 = _interopRequireDefault(_Textbox);
 
-	var _Textarea = __webpack_require__(16);
+	var _Textarea = __webpack_require__(18);
 
 	var _Textarea2 = _interopRequireDefault(_Textarea);
 
-	var _Checkbox = __webpack_require__(21);
+	var _Checkbox = __webpack_require__(23);
 
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
@@ -90,12 +94,9 @@ module.exports =
 
 	var _Avatar2 = _interopRequireDefault(_Avatar);
 
-	var _Icon = __webpack_require__(24);
-
-	var _Icon2 = _interopRequireDefault(_Icon);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+	exports.Icon = _Icon2["default"];
 	exports.Button = _Button2["default"];
 	exports.Textbox = _Textbox2["default"];
 	exports.Textarea = _Textarea2["default"];
@@ -104,7 +105,6 @@ module.exports =
 	exports.Radio = _Radio2["default"];
 	exports.Select = _Select2["default"];
 	exports.Avatar = _Avatar2["default"];
-	exports.Icon = _Icon2["default"];
 
 /***/ },
 /* 1 */
@@ -153,15 +153,125 @@ module.exports =
 	    value: true
 	});
 
-	var _Button = __webpack_require__(8);
+	__webpack_require__(8);
 
-	var _Button2 = _interopRequireDefault(_Button);
-
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(11);
+	var _classnames = __webpack_require__(10);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Icon = function (_React$Component) {
+	    _inherits(Icon, _React$Component);
+
+	    function Icon() {
+	        _classCallCheck(this, Icon);
+
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
+	    }
+
+	    _createClass(Icon, [{
+	        key: 'render',
+	        value: function render() {
+	            var _cx;
+
+	            var _props = this.props;
+	            var Component = _props.Component;
+	            var className = _props.className;
+	            var name = _props.name;
+	            var size = _props.size;
+	            var rotate = _props.rotate;
+	            var flip = _props.flip;
+	            var spin = _props.spin;
+	            var fixedWidth = _props.fixedWidth;
+	            var stack = _props.stack;
+	            var inverse = _props.inverse;
+	            var pulse = _props.pulse;
+
+	            var other = _objectWithoutProperties(_props, ['Component', 'className', 'name', 'size', 'rotate', 'flip', 'spin', 'fixedWidth', 'stack', 'inverse', 'pulse']);
+
+	            var classNames = (0, _classnames2["default"])('fa', 'fa-' + name, (_cx = {}, _defineProperty(_cx, 'fa-' + size, size), _defineProperty(_cx, 'fa-rotate-' + rotate, rotate), _defineProperty(_cx, 'fa-flip-' + flip, flip), _defineProperty(_cx, 'fa-fw', fixedWidth), _defineProperty(_cx, 'fa-spin', spin), _defineProperty(_cx, 'fa-pulse', pulse), _defineProperty(_cx, 'fa-stack-' + stack, stack), _defineProperty(_cx, 'fa-inverse', inverse), _cx), className);
+
+	            return _react2["default"].createElement(Component, _extends({ className: classNames }, other));
+	        }
+	    }]);
+
+	    return Icon;
+	}(_react2["default"].Component);
+
+	Icon.defaultProps = {
+	    Component: 'span'
+	};
+	Icon.propTypes = {
+	    name: _react2["default"].PropTypes.string.isRequired,
+	    className: _react2["default"].PropTypes.string,
+	    size: _react2["default"].PropTypes.oneOf(['lg', '2x', '3x', '4x', '5x']),
+	    rotate: _react2["default"].PropTypes.oneOf(['45', '90', '135', '180', '225', '270', '315']),
+	    flip: _react2["default"].PropTypes.oneOf(['horizontal', 'vertical']),
+	    fixedWidth: _react2["default"].PropTypes.bool,
+	    spin: _react2["default"].PropTypes.bool,
+	    pulse: _react2["default"].PropTypes.bool,
+	    stack: _react2["default"].PropTypes.oneOf(['1x', '2x']),
+	    inverse: _react2["default"].PropTypes.bool,
+	    Component: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.string, _react2["default"].PropTypes.func])
+	};
+	exports["default"] = Icon;
+
+/***/ },
+/* 8 */
+/***/ function(module, exports) {
+
+	module.exports = require("font-awesome/css/font-awesome.css");
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	module.exports = require("react");
+
+/***/ },
+/* 10 */
+/***/ function(module, exports) {
+
+	module.exports = require("classnames");
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _Button = __webpack_require__(12);
+
+	var _Button2 = _interopRequireDefault(_Button);
+
+	var _react = __webpack_require__(9);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _classnames = __webpack_require__(10);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -225,27 +335,15 @@ module.exports =
 	;
 
 /***/ },
-/* 8 */
+/* 12 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"btn":"Button__btn___1YxIY","disabled":"Button__disabled___2A9nP","primary":"Button__primary___3ReFs","link":"Button__link___23FVO","lg":"Button__lg___19XBB","sm":"Button__sm___IQIX5","block":"Button__block___3nwFA"};
 
 /***/ },
-/* 9 */,
-/* 10 */
-/***/ function(module, exports) {
-
-	module.exports = require("react");
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	module.exports = require("classnames");
-
-/***/ },
-/* 12 */
+/* 13 */,
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -258,19 +356,19 @@ module.exports =
 	    value: true
 	});
 
-	var _Textbox = __webpack_require__(13);
+	var _Textbox = __webpack_require__(15);
 
 	var _Textbox2 = _interopRequireDefault(_Textbox);
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(11);
+	var _classnames = __webpack_require__(10);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _PlaceholderShim = __webpack_require__(15);
+	var _PlaceholderShim = __webpack_require__(17);
 
 	var _PlaceholderShim2 = _interopRequireDefault(_PlaceholderShim);
 
@@ -327,15 +425,15 @@ module.exports =
 	exports["default"] = Textbox;
 
 /***/ },
-/* 13 */
+/* 15 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"textbox":"Textbox__textbox___39jMb","primary":"Textbox__primary___2lY9Y","disabled":"Textbox__disabled___19jFf"};
 
 /***/ },
-/* 14 */,
-/* 15 */
+/* 16 */,
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -350,7 +448,7 @@ module.exports =
 	    value: true
 	});
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -502,7 +600,7 @@ module.exports =
 	exports["default"] = PlaceholderShim;
 
 /***/ },
-/* 16 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -515,27 +613,27 @@ module.exports =
 	    value: true
 	});
 
-	var _Textarea = __webpack_require__(17);
+	var _Textarea = __webpack_require__(19);
 
 	var _Textarea2 = _interopRequireDefault(_Textarea);
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(11);
+	var _classnames = __webpack_require__(10);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _util = __webpack_require__(19);
+	var _util = __webpack_require__(21);
 
 	var _util2 = _interopRequireDefault(_util);
 
-	var _PlaceholderShim = __webpack_require__(15);
+	var _PlaceholderShim = __webpack_require__(17);
 
 	var _PlaceholderShim2 = _interopRequireDefault(_PlaceholderShim);
 
-	var _calculateNodeHeight2 = __webpack_require__(20);
+	var _calculateNodeHeight2 = __webpack_require__(22);
 
 	var _calculateNodeHeight3 = _interopRequireDefault(_calculateNodeHeight2);
 
@@ -634,22 +732,22 @@ module.exports =
 	    lgStyle: 'default'
 	};
 	Textarea.propTypes = {
-	    minRows: _react2["default"].PropTypes.number,
-	    maxRows: _react2["default"].PropTypes.number,
+	    minRows: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.string, _react2["default"].PropTypes.number]),
+	    maxRows: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.string, _react2["default"].PropTypes.number]),
 	    lgStyle: _react2["default"].PropTypes.oneOf(['default', 'primary'])
 	};
 	exports["default"] = Textarea;
 
 /***/ },
-/* 17 */
+/* 19 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"textarea":"Textarea__textarea___2zA8R","primary":"Textarea__primary___2rWpX","disabled":"Textarea__disabled___3BC_1"};
 
 /***/ },
-/* 18 */,
-/* 19 */
+/* 20 */,
+/* 21 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -770,7 +868,7 @@ module.exports =
 	exports["default"] = _;
 
 /***/ },
-/* 20 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -780,7 +878,7 @@ module.exports =
 	});
 	exports["default"] = calculateNodeHeight;
 
-	var _util = __webpack_require__(19);
+	var _util = __webpack_require__(21);
 
 	var _util2 = _interopRequireDefault(_util);
 
@@ -892,7 +990,7 @@ module.exports =
 	}
 
 /***/ },
-/* 21 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -905,19 +1003,19 @@ module.exports =
 	    value: true
 	});
 
-	var _Checkbox = __webpack_require__(22);
+	var _Checkbox = __webpack_require__(24);
 
 	var _Checkbox2 = _interopRequireDefault(_Checkbox);
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Icon = __webpack_require__(24);
+	var _Icon = __webpack_require__(7);
 
 	var _Icon2 = _interopRequireDefault(_Icon);
 
-	var _classnames = __webpack_require__(11);
+	var _classnames = __webpack_require__(10);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -991,112 +1089,14 @@ module.exports =
 	exports["default"] = Checkbox;
 
 /***/ },
-/* 22 */
+/* 24 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 	module.exports = {"checkbox":"Checkbox__checkbox___2y-hp","input":"Checkbox__input___MEL3A","icon":"Checkbox__icon___2G-0B","checked":"Checkbox__checked___1_BlK","disabled":"Checkbox__disabled___Kvt2p"};
 
 /***/ },
-/* 23 */,
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	__webpack_require__(25);
-
-	var _react = __webpack_require__(10);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _classnames = __webpack_require__(11);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Icon = function (_React$Component) {
-	    _inherits(Icon, _React$Component);
-
-	    function Icon() {
-	        _classCallCheck(this, Icon);
-
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Icon).apply(this, arguments));
-	    }
-
-	    _createClass(Icon, [{
-	        key: 'render',
-	        value: function render() {
-	            var _cx;
-
-	            var _props = this.props;
-	            var Component = _props.Component;
-	            var className = _props.className;
-	            var name = _props.name;
-	            var size = _props.size;
-	            var rotate = _props.rotate;
-	            var flip = _props.flip;
-	            var spin = _props.spin;
-	            var fixedWidth = _props.fixedWidth;
-	            var stack = _props.stack;
-	            var inverse = _props.inverse;
-	            var pulse = _props.pulse;
-
-	            var other = _objectWithoutProperties(_props, ['Component', 'className', 'name', 'size', 'rotate', 'flip', 'spin', 'fixedWidth', 'stack', 'inverse', 'pulse']);
-
-	            var classNames = (0, _classnames2["default"])('fa', 'fa-' + name, (_cx = {}, _defineProperty(_cx, 'fa-' + size, size), _defineProperty(_cx, 'fa-rotate-' + rotate, rotate), _defineProperty(_cx, 'fa-flip-' + flip, flip), _defineProperty(_cx, 'fa-fw', fixedWidth), _defineProperty(_cx, 'fa-spin', spin), _defineProperty(_cx, 'fa-pulse', pulse), _defineProperty(_cx, 'fa-stack-' + stack, stack), _defineProperty(_cx, 'fa-inverse', inverse), _cx), className);
-
-	            return _react2["default"].createElement(Component, _extends({ className: classNames }, other));
-	        }
-	    }]);
-
-	    return Icon;
-	}(_react2["default"].Component);
-
-	Icon.defaultProps = {
-	    Component: 'span'
-	};
-	Icon.propTypes = {
-	    name: _react2["default"].PropTypes.string.isRequired,
-	    className: _react2["default"].PropTypes.string,
-	    size: _react2["default"].PropTypes.oneOf(['lg', '2x', '3x', '4x', '5x']),
-	    rotate: _react2["default"].PropTypes.oneOf(['45', '90', '135', '180', '225', '270', '315']),
-	    flip: _react2["default"].PropTypes.oneOf(['horizontal', 'vertical']),
-	    fixedWidth: _react2["default"].PropTypes.bool,
-	    spin: _react2["default"].PropTypes.bool,
-	    pulse: _react2["default"].PropTypes.bool,
-	    stack: _react2["default"].PropTypes.oneOf(['1x', '2x']),
-	    inverse: _react2["default"].PropTypes.bool,
-	    Component: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.string, _react2["default"].PropTypes.func])
-	};
-	exports["default"] = Icon;
-
-/***/ },
-/* 25 */
-/***/ function(module, exports) {
-
-	module.exports = require("font-awesome/css/font-awesome.css");
-
-/***/ },
+/* 25 */,
 /* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -1110,7 +1110,7 @@ module.exports =
 	    value: true
 	});
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
@@ -1201,11 +1201,11 @@ module.exports =
 
 	var _Radio2 = _interopRequireDefault(_Radio);
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(11);
+	var _classnames = __webpack_require__(10);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1294,19 +1294,19 @@ module.exports =
 
 	var _Select2 = _interopRequireDefault(_Select);
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(11);
+	var _classnames = __webpack_require__(10);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
-	var _Icon = __webpack_require__(24);
+	var _Icon = __webpack_require__(7);
 
 	var _Icon2 = _interopRequireDefault(_Icon);
 
-	var _util = __webpack_require__(19);
+	var _util = __webpack_require__(21);
 
 	var _util2 = _interopRequireDefault(_util);
 
@@ -1519,11 +1519,11 @@ module.exports =
 	    value: true
 	});
 
-	var _react = __webpack_require__(10);
+	var _react = __webpack_require__(9);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _classnames = __webpack_require__(11);
+	var _classnames = __webpack_require__(10);
 
 	var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1596,7 +1596,7 @@ module.exports =
 	};
 	Avatar.propTypes = {
 	    color: _react2["default"].PropTypes.string,
-	    size: _react2["default"].PropTypes.number,
+	    size: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.string, _react2["default"].PropTypes.number]),
 	    text: _react2["default"].PropTypes.string
 	};
 	exports["default"] = Avatar;

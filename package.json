@@ -1,6 +1,6 @@
 {
   "name": "lagouui-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lagou UI components built with React.js.",
   "main": "./src/LGUIReact.js",
   "scripts": {
