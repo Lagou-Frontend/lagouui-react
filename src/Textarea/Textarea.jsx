@@ -24,7 +24,7 @@ export default class Textarea extends React.Component {
 
     autoSize(e) {
         let minRows = this.props.minRows || this.props.rows || 2;
-        let maxRows = this.props.minRows;
+        let maxRows = this.props.maxRows;
         let { height, maxHeight } = calculateNodeHeight(e.target, false, minRows, maxRows);
         this.setState({ height, maxHeight });
     }
