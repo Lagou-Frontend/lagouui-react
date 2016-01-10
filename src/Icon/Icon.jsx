@@ -39,7 +39,7 @@ export default class Icon extends React.Component {
             ...other
         } = this.props;
 
-        cx(
+        let classNames = cx(
             'fa',
             `fa-${name}`,
             {

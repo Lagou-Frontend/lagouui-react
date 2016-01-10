@@ -1,7 +1,7 @@
 import styles from './Checkbox.css';
 
 import React from 'react';
-import Icon from 'react-fa';
+import Icon from '../Icon/Icon';
 import cx from 'classnames';
 
 export default class Checkbox extends React.Component {

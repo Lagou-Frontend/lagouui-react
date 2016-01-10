@@ -2,7 +2,7 @@ import styles from './Select.css';
 
 import React from 'react';
 import cx from 'classnames';
-import Icon from 'react-fa';
+import Icon from '../Icon/Icon';
 import _ from '../util/util';
 
 export default class Select extends React.Component {
