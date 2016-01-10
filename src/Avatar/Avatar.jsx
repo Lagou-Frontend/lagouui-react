@@ -9,7 +9,7 @@ export default class Avatar extends React.Component {
 
     static propTypes = {
         color: React.PropTypes.string,
-        size: React.PropTypes.number,
+        size: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]),
         text: React.PropTypes.string
     };
 

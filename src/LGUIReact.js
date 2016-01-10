@@ -4,6 +4,8 @@ import 'babel-polyfill';
 
 import './util/polyfill';
 
+import Icon from './Icon/Icon';
+
 import Button from './Button/Button';
 
 import Textbox from './Textbox/Textbox';
@@ -20,9 +22,8 @@ import Select from './Select/Select';
 
 import Avatar from './Avatar/Avatar';
 
-import Icon from './Icon/Icon';
-
 export {
+    Icon,
     Button,
     Textbox,
     Textarea,
@@ -30,6 +31,5 @@ export {
     RadioGroup,
     Radio,
     Select,
-    Avatar,
-    Icon
+    Avatar
 };

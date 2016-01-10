@@ -12,8 +12,8 @@ export default class Textarea extends React.Component {
     };
 
     static propTypes = {
-        minRows: React.PropTypes.number,
-        maxRows: React.PropTypes.number,
+        minRows: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]),
+        maxRows: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]),
         lgStyle: React.PropTypes.oneOf(['default', 'primary'])
     };
 
