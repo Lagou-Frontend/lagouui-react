@@ -20,7 +20,7 @@ import Select from './Select/Select';
 
 import Avatar from './Avatar/Avatar';
 
-import Icon from 'react-fa';
+import Icon from './Icon/Icon';
 
 export {
     Button,
