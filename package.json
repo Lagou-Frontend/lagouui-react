@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Lagou-Frontend/lagouui-react/issues"
   },
-  "homepage": "https://github.com/Lagou-Frontend/lagouui-react",
+  "homepage": "http://lagou-frontend.github.io/lagouui-react-doc/dist/",
   "author": "Lagou FED",
   "license": "ISC",
   "devDependencies": {
