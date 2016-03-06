@@ -15,7 +15,7 @@ module.exports = {
                 loaders: [
                     'react-hot',
                     'es3ify',
-                    'babel?{presets:["es2015", "stage-0", "react"]}'
+                    'babel?{presets:['es2015', 'stage-0', 'react']}'
                 ],
                 exclude: /node_modules/
             },
